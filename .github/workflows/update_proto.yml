@@ -37,7 +37,7 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
     - name: Bump version
-      run: cargo-bump minor --git-tag
+      run: cargo bump minor --git-tag
     - name: Commit new version
       run: git add . && git commit -m "New version"
     - name: Git push
