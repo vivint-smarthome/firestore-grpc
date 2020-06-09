@@ -22,7 +22,7 @@ jobs:
         git config --global user.email "github@s.k-kachi.net"
         git config --global push.default current
         git remote set-url origin https://gkkachi:${GITHUB_TOKEN}@github.com/gkkachi/firestore-grpc.git
-        git checkout -b master
+        git checkout master
     - name: Cargo setup
       run: |
         rustup update
